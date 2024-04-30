@@ -199,7 +199,7 @@ section{
     background-size: cover;
     margin: 0 auto;
     width: 100%;
-    padding: 72px 52px;
+    padding: 72px 0;
     /* max-width: 1440px; */
 
 }
@@ -329,9 +329,6 @@ section{
     margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
-
 }
 
 .team-title {
@@ -349,6 +346,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+    justify-content: center;
 }
 
 .team-member {
@@ -357,12 +355,10 @@ section{
     width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    margin-bottom: 36px;
-
 }
 
 .team-member-image{
-    margin: 0 auto;
+
 }
 
 .team-member-container{
@@ -421,7 +417,11 @@ section{
 /*------------------------------------ */
 /*-----------------OUR PORTFOLIO------------------- */
 
-.portfolio {}
+.portfolio {
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 
 .portfolio-title {
     font-weight: 700;
@@ -437,11 +437,14 @@ section{
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 48px;
 }
 
 .portfolio-list-item {
     /* width: calc((100% - 2 * 24px) / 3); */
+    width: 288px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -478,8 +481,10 @@ section{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .portfolio-image{
-    margin: 0 auto;
+    width: 288px;
+height: 280px;
 }
 
 .portfolio-item-container{
@@ -510,7 +515,8 @@ section{
 /*-----------------FOOTER------------------- */
 
 .footer {
-    max-height: 312px;
+    /* max-height: 312px; */
+    min-height: 364px;
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #2e2f42;
@@ -519,12 +525,15 @@ section{
 
 .footer-container{
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 72;
+    /* align-items: baseline; */
 }
 
 .footer-container-logo{
     margin-right: 120px;
-    
+    text-align: center;
+    max-width: 288px;
 }
 
 .footer-link {
@@ -536,14 +545,17 @@ section{
     text-transform: uppercase;
     margin-bottom: 16px;
     display: inline-block; 
-
-    color: #4d5ae5;}
+    align-items: center;
+    color: #4d5ae5;
+}
 
 .footer-link .accent {
     color: #f4f4fd;
 }
 
 .footer-text {
+
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -552,7 +564,7 @@ section{
 }
 
 .footer-container-soc-media {
-    margin-right: 80px;
+    margin: 72px 56px 72px 40px;
 }  
 
 .soc-title {
@@ -562,6 +574,7 @@ section{
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+    text-align: center;
 }
 .footer-soc-list {
     display: flex;
@@ -596,6 +609,7 @@ section{
 
 
 .footer-container-email{
+    justify-content: center;
 
 }
 .footer-subscribe {
@@ -605,14 +619,15 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
 margin-bottom: 16px;
+text-align: center;
 }
 
-.footer-form {
-    display: flex;
-    gap: 24px;
+.footer-form { 
+    /* gap: 24px; */
+
 }
 .footer-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #fff;
 border-radius: 4px;
@@ -621,8 +636,10 @@ font-size: 12px;
 line-height: 2;
 letter-spacing: 0.04em;
 padding-left: 16px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+opacity: 0.3;
 color: #ffffff ;
+margin-bottom: 16px;
 }
 
 .footer-input::placeholder{
@@ -631,6 +648,7 @@ color: #ffffff ;
 line-height: 2;
 letter-spacing: 0.04em;
 color: #fff;
+
 }
 
 
@@ -651,6 +669,7 @@ border-radius: 4px;
 border: none;
 color: #ffffff;
 cursor: pointer;
+margin: 0 auto;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -913,7 +932,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width: 768px) {
     .container{
-        width: 584px;
+        width: 768px;
     }
 
     .advantages-list {
@@ -928,6 +947,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         text-align: left;
     }
 
+
+    .team-container{
+        width: 584px;
+    }
+
     .team-list {
         gap: 64px 24px;
     }
@@ -937,11 +961,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .hero-btn{
+        margin-top: 36px;
 
     }
 
     .hero-wrap{
-        padding: 112px 136px 204px 136px;
+        padding: 112px 0 112px 0;
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
@@ -965,10 +990,50 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 
+    .portfolio-list {
+        gap: 72px 24px;
+    }
+
+    .portfolio-list-item{
+        width: 356px;
+    }
+
+    .portfolio-image{
+        width: 356px;
+        height: 300px;
+    }
+
+    .container .footer-container {
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 0;
+        width: 584px;
+    }
+
+    .footer-container-logo{
+        max-width: 264px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
+    .footer-text{
+    
+    }
+
+    .footer-container-soc-media {
+        margin: 96px 164px 104px 24px;
+    }  
+
 }
 
 @media  screen and (min-width: 1158px){
     .container{
+        padding-left: 15px;
+        padding-right: 15px;
         width: 1158px;
     }
 
@@ -1014,12 +1079,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
 
+
     .hero-wrap{
+        padding: 188px 0;
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero_bg.jpg);
+
     }
 
     @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -1030,6 +1098,21 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         ),
         url(../images/hero_bg_2x.jpg);
         }
+    }
+
+    .portfolio-list {
+        gap: 40px 24px;
+    }
+
+    .portfolio-list-item{
+        width: 360px;
+        height: 420px;
+        box-shadow:none;
+    }
+
+    .portfolio-image{
+        width: 360px;
+        height: 300px;
     }
 
 }
