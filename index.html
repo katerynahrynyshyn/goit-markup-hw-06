@@ -21,7 +21,7 @@
 
 </head>
 <body>
-   <!-- <header class="header">
+   <header class="header">
     <div class="container header-container">
     <nav class="header-nav">
         <a class="header-logo" href="./index.html">Web<span class="accent">Studio</span></a>
@@ -39,8 +39,69 @@
             <li class="header-contacts-item"><a class="header-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
+    <button type="button" class="menu-open-btn">
+        <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+    </button>
 </div>
-   </header>  -->
+<div class="mob-menu s-open">
+    <div>
+    <button class="menu-close-btn" type="button">
+        <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-X"></use>
+        </svg>
+    </button>
+    <nav>
+        <div class="mob-menu-list">
+            <ul class="mob-header-menu-list">
+                <li class="mob-header-menu-item"><a class="mob-header-menu-link studio" href="./index.html">Studio</a></li>
+                <li class="mob-header-menu-item"><a class="mob-header-menu-link" href="">Portfolio</a></li>
+                <li class="mob-header-menu-item"><a class="mob-header-menu-link" href="">Contacts</a></li>
+            </ul>
+        </div>
+        <address class="mob-header-contacts">
+            <ul class="mob-header-contacts-list">
+                <li class="mob-header-contacts-item"><a class="mob-header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="mob-header-contacts-item"><a class="mob-header-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+    </nav>
+</div>
+        <div class="menu-container-soc-media">
+            <ul class="menu-soc-list">
+              <li class="menu-soc-item">
+                  <a href="" class="menu-soc-link">
+                  <svg class="soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+              </a>
+              </li>
+              <li class="menu-soc-item">
+                  <a href="" class="menu-soc-link">
+                  <svg class="soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+              </a>
+              </li>
+              <li class="menu-soc-item">
+                  <a href="" class="menu-soc-link">
+                  <svg class="soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+              </a>
+              </li>
+              <li class="menu-soc-item">
+                  <a href="" class="menu-soc-link">
+                  <svg class="soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+              </a>
+              </li>
+            </ul>
+            </div>
+</div>
+   </header> 
 
    <main class="main">
      <section class="hero hero-wrap">
@@ -536,11 +597,11 @@
             <label for="footer-email" class="footer-label">
                 <input type="email" name="footer-email" class="footer-input" placeholder="E-mail" id="footer-email"/>
             </label>
-             <button type="submit" class="footer-btn">Subscribe
+            <button type="submit" class="footer-btn">Subscribe
                 <svg class="icon-btn" width="24" height="24">
                     <use href="./images/icons.svg#icon-subscribe"></use>
                 </svg>
-                </button>
+            </button>
         </form>
       </div>
     </div>  
